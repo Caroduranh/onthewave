@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Private Piano Lessons with Caro Durán · On the Wave</title>
+<meta name="description" content="Private, one-on-one piano lessons in New York with Caro Durán. Learn music theory, sheet-music reading and your first pieces, with a touch of jazz.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Private Piano Lessons with Caro Durán · On the Wave">
+<meta property="og:description" content="One-on-one lessons from the very first note: theory, reading and your first pieces, with a touch of jazz.">
+<meta property="og:image" content="https://caroduranh.github.io/onthewave/og-piano.jpg">
+<meta property="og:url" content="https://caroduranh.github.io/onthewave/piano.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://caroduranh.github.io/onthewave/og-piano.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0E111C; --night-2:#161A2A; --gold:#D6B16A; --gold-soft:#E7CD97; --cream:#F6EFE2; --ink:#1B1A22; --muted:#6C6773; --line:#E6DCCB; --paper:#FBF7EF;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400}
+.eyebrow{margin:0;font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold)}
+
+.top{background:var(--night);color:var(--cream)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:19px}
+.brand img{height:26px;width:auto}
+.top .mini{font-size:14px;font-weight:600;color:var(--gold-soft);text-decoration:underline;text-underline-offset:4px}
+
+.hero{background:var(--night);color:var(--cream);padding:56px 0 0;text-align:center}
+.hero h1{margin:20px 0 0;font-size:clamp(50px,9vw,96px);line-height:1;letter-spacing:-1.5px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero .sub{margin:24px auto 0;max-width:600px;font-size:clamp(17px,2.3vw,20px);line-height:1.6;color:#D9D2C4}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 30px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:var(--night)}
+.btn.ghost{border:1.5px solid rgba(246,239,226,.5);color:var(--cream)}
+.btn.night{background:var(--night);color:var(--cream)}
+
+.keys{margin-top:56px;height:120px;display:flex;position:relative;overflow:hidden}
+.keys span{flex:1;background:var(--cream);border-right:2px solid var(--night)}
+.keys i{position:absolute;top:0;width:2.2%;height:62%;background:var(--night);border-radius:0 0 4px 4px}
+
+section{padding:76px 0}
+h2{margin:0;font-size:clamp(34px,5vw,50px);line-height:1.05;letter-spacing:-.5px}
+.lead{margin:16px 0 0;font-size:18px;line-height:1.65;color:var(--muted);max-width:640px}
+
+.summary{margin-top:-1px;background:var(--paper)}
+.sum{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:22px;background:#fff;overflow:hidden}
+.sum div{padding:26px 22px;border-right:1px solid var(--line)}
+.sum div:last-child{border-right:0}
+.sum small{display:block;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.sum b{display:block;margin-top:8px;font-family:'DM Serif Display',serif;font-weight:400;font-size:28px;line-height:1.1}
+.sum span{display:block;margin-top:6px;font-size:14px;color:var(--muted);line-height:1.4}
+
+.learn{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+.item{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.item .n{font-family:'DM Serif Display',serif;font-size:40px;color:var(--gold);line-height:1}
+.item h3{margin:12px 0 0;font-size:20px}
+.item p{margin:10px 0 0;line-height:1.6;color:var(--muted)}
+
+.dark{background:var(--night);color:var(--cream)}
+.dark .lead{color:#CFC8BA}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.step{border:1px solid rgba(214,177,106,.35);border-radius:20px;padding:28px}
+.step h3{margin:0;font-size:19px;color:var(--gold-soft)}
+.step p{margin:10px 0 0;line-height:1.6;color:#D9D2C4}
+
+.teacher ul{margin:26px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.teacher li{display:flex;gap:12px;align-items:flex-start;line-height:1.5}
+
+.price{text-align:center}
+.box{max-width:560px;margin:34px auto 0;background:#fff;border:1px solid var(--line);border-radius:26px;padding:38px 30px}
+.box .big{font-family:'DM Serif Display',serif;font-size:68px;line-height:1;color:var(--night)}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px;text-align:left}
+.row:last-of-type{border-bottom:0}
+.box .btn{width:100%;margin-top:22px}
+.fine{margin:12px 0 0;font-size:13px;color:var(--muted)}
+
+.talk{background:var(--night);color:var(--cream);text-align:center}
+.talk .lead{color:#CFC8BA;margin-left:auto;margin-right:auto}
+
+footer{padding:40px 0 56px;text-align:center;font-size:14px;color:var(--muted)}
+footer .brand{justify-content:center;color:var(--ink);margin-bottom:12px}
+
+@media (max-width:760px){
+  .sum{grid-template-columns:1fr 1fr}
+  .sum div:nth-child(2){border-right:0}
+  .sum div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .learn,.steps{grid-template-columns:1fr}
+  section{padding:58px 0}
+  .keys{height:80px}
+  .top .mini{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="wave.png" alt="">On the Wave</a>
+    <a class="mini" href="#enroll">Enroll</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Private piano lessons · One-on-one</p>
+      <h1 class="serif">Piano, from the<br><em>very first note.</em></h1>
+      <p class="sub">Private lessons with Caro Durán to learn music theory at the piano, read sheet music and play your first pieces, with a touch of jazz along the way.</p>
+      <div class="btns">
+        <a class="btn gold" href="#enroll">Enroll in Module 1</a>
+        <a class="btn ghost" href="#program">See the program</a>
+      </div>
+    </div>
+    <div class="keys" aria-hidden="true" id="keys"></div>
+  </div>
+
+  <section class="summary">
+    <div class="wrap">
+      <div class="sum">
+        <div><small>Format</small><b>Private</b><span>Just you and your teacher</span></div>
+        <div><small>Module 1</small><b>4 lessons</b><span>90 minutes each</span></div>
+        <div><small>Frequency</small><b>Weekly</b><span>One lesson per week</span></div>
+        <div><small>Schedule</small><b>Flexible</b><span>Set together with the student</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="program" style="padding-top:20px">
+    <div class="wrap">
+      <p class="eyebrow">Module 1 · The foundations</p>
+      <h2 class="serif" style="margin-top:14px">What you'll learn</h2>
+      <p class="lead">A first module designed for complete beginners: by the end you'll understand how music works at the keyboard and you'll be playing your first pieces.</p>
+      <div class="learn">
+        <div class="item"><div class="n">01</div><h3>Music theory at the piano</h3><p>Notes, scales and chords explained directly on the keyboard, so theory always turns into sound.</p></div>
+        <div class="item"><div class="n">02</div><h3>Reading sheet music</h3><p>Learn to read notes and rhythm on the staff, step by step, until reading feels natural.</p></div>
+        <div class="item"><div class="n">03</div><h3>Your first pieces</h3><p>Take your first steps at the piano and build the basics to play your first complete pieces.</p></div>
+        <div class="item"><div class="n">04</div><h3>A touch of jazz</h3><p>Discover the sound of jazz from the start, so you learn the foundations with style and groove.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2 class="serif" style="margin-top:14px">Lessons built around you</h2>
+      <div class="steps">
+        <div class="step"><h3>One-on-one</h3><p>Every lesson is private: the whole session is focused on your pace, your questions and your goals.</p></div>
+        <div class="step"><h3>Your schedule</h3><p>We set the lesson time together, once a week, 90 minutes per session.</p></div>
+        <div class="step"><h3>Student platform</h3><p>You get access to the On the Wave student platform to organize your lessons and keep your practice on track between sessions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teacher">
+    <div class="wrap">
+      <p class="eyebrow">Your teacher</p>
+      <h2 class="serif" style="margin-top:14px">Caro Durán</h2>
+      <p class="lead">Colombian composer, multi-instrumentalist and producer based in New York, with over 15 years of experience teaching music in English and Spanish.</p>
+      <ul>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6B16A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Part-time faculty, Electronic Digital Instrument, Berklee College of Music</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6B16A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Ableton Certified Trainer and Roland Certified Trainer</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6B16A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Yamaha Ambassador for Latin America</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6B16A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Voting member of the Recording Academy (GRAMMYs) and the Latin Recording Academy</li>
+      </ul>
+      <a class="btn night" style="margin-top:28px" href="https://instagram.com/caroduranh">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @caroduranh on Instagram
+      </a>
+    </div>
+  </section>
+
+  <section class="price" id="enroll" style="padding-top:20px">
+    <div class="wrap">
+      <p class="eyebrow">Investment</p>
+      <h2 class="serif" style="margin-top:14px">Module 1</h2>
+      <div class="box">
+        <div class="big">$600</div>
+        <p style="margin:8px 0 18px;color:var(--muted)">Module 1 · 4 private lessons</p>
+        <div class="row"><span>Lessons</span><strong>4 × 90 minutes</strong></div>
+        <div class="row"><span>Frequency</span><strong>Once a week</strong></div>
+        <div class="row"><span>Format</span><strong>Private, one-on-one</strong></div>
+        <div class="row"><span>Includes</span><strong>Student platform access</strong></div>
+        <a class="btn night" id="pay" href="https://buy.stripe.com/TU-LINK-PIANO">Pay Module 1</a>
+        <p class="fine">Secure payment with Stripe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="talk">
+    <div class="wrap">
+      <h2 class="serif">Questions? Let's talk.</h2>
+      <p class="lead">Message us on WhatsApp to set your schedule or ask anything about the lessons.</p>
+      <div class="btns">
+        <a class="btn gold" href="https://wa.me/19293127742?text=Hi%20On%20the%20Wave%2C%20I%27d%20like%20information%20about%20the%20private%20piano%20lessons">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+          Message us on WhatsApp
+        </a>
+      </div>
+      <p style="margin:16px 0 0;font-size:16px;opacity:.85">+1 (929) 312-7742</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="brand"><img src="wave.png" alt="" style="height:26px;filter:invert(1) brightness(.2)">On the Wave</div>
+  <p>Private piano lessons with Caro Durán · New York</p>
+</footer>
+
+<script>
+(function(){
+  var k=document.getElementById('keys'); var n=28, pat=[1,1,0,1,1,1,0], html='';
+  for(var i=0;i<n;i++) html+='<span></span>';
+  for(var j=0;j<n-1;j++) if(pat[j%7]) html+='<i style="left:calc('+((j+1)/n*100)+'% - 1.1%)"></i>';
+  k.innerHTML=html;
+})();
+</script>
+</body>
+</html>
