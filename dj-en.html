@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var q=location.search;if(/[?&]lang=/.test(q))return;var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase();var es=l.indexOf('es')===0;if(es){location.replace('dj.html'+location.hash);}}catch(e){}})();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DJ from scratch · Black Friday · On the Wave</title>
+<meta name="description" content="Learn to DJ from scratch with Caro Durán at Flux Studios, NYC. 4 intensive sessions. Black Friday: compete for a free Pioneer DDJ-FLX4. Reserve with $50.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Black Friday: a free FLX4* · DJ from scratch">
+<meta property="og:description" content="Learn to mix with Caro Durán at Flux Studios, NYC. Enrollment open until November 30. Reserve your spot with $50.">
+<meta property="og:image" content="https://onthewavenyc.com/og-dj.jpg">
+<meta property="og:url" content="https://onthewavenyc.com/dj-en.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://onthewavenyc.com/og-dj.jpg">
+<link rel="alternate" hreflang="es" href="https://onthewavenyc.com/dj.html">
+<link rel="alternate" hreflang="en" href="https://onthewavenyc.com/dj-en.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#C8202A; --red-dark:#A3161F; --cream:#FFF3E8; --ink:#2A0A0D; --muted:#6B4A4C; --paper:#FFF8F1; --line:#EBD9CC;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400}
+
+/* top bar */
+.top{background:var(--red);color:var(--cream)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:19px;letter-spacing:-.2px}
+.brand img{height:26px;width:auto}
+.top .mini{font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+
+/* hero */
+.hero{background:var(--red);color:var(--cream);text-align:center;padding:40px 0 64px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;margin:0}
+.hero h1{margin:18px 0 0;font-size:clamp(52px,11vw,104px);line-height:.98;letter-spacing:-2px}
+.hero .sub{margin:22px auto 0;max-width:560px;font-size:clamp(17px,2.4vw,20px);line-height:1.5;opacity:.95}
+.hero img{display:block;width:min(760px,100%);height:auto;margin:40px auto 0;filter:drop-shadow(0 24px 28px rgba(60,0,0,.45))}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;border-radius:999px;background:var(--cream);color:var(--red);font-weight:700;font-size:18px;text-decoration:none;transition:transform .15s ease}
+.cta:hover{transform:translateY(-2px)}
+.cta.dark{background:var(--red);color:var(--cream)}
+.hero .cta{margin-top:36px}
+.note{margin:14px 0 0;font-size:14px;opacity:.9}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-bottom:1px solid var(--line);background:var(--paper)}
+.fact{padding:28px 20px;text-align:center;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact b{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:32px;color:var(--red)}
+.fact span{display:block;margin-top:6px;font-size:14px;color:var(--muted);line-height:1.4}
+
+section{padding:72px 0}
+h2{margin:0;font-size:clamp(34px,5vw,48px);line-height:1.05;letter-spacing:-1px}
+.lead{margin:14px 0 0;font-size:18px;line-height:1.6;color:var(--muted);max-width:640px}
+
+/* two col */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.card h3{margin:0;font-size:20px}
+.card p{margin:10px 0 0;line-height:1.6;color:var(--muted)}
+.check{display:flex;gap:12px;align-items:flex-start}
+.check svg{flex:none;margin-top:2px}
+
+/* schedule */
+.dates{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}
+.date{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center}
+.date small{display:block;font-size:12px;font-weight:700;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+.date b{display:block;margin-top:6px;font-family:'DM Serif Display',serif;font-weight:400;font-size:30px}
+.date span{display:block;margin-top:4px;font-size:14px;color:var(--muted)}
+.when{margin-top:20px;font-size:17px;line-height:1.6}
+
+/* prize */
+.prize{background:var(--ink);color:var(--cream)}
+.prize .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.prize .lead{color:#E8CFC9}
+.prize img{width:100%;height:auto;filter:drop-shadow(0 20px 24px rgba(0,0,0,.5))}
+.prize .fine{margin-top:16px;font-size:14px;color:#CDB3AE}
+
+/* teacher */
+.teacher ul{margin:24px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.teacher li{display:flex;gap:12px;align-items:flex-start;line-height:1.5}
+
+/* price */
+.price{background:var(--red);color:var(--cream);text-align:center}
+.price .box{max-width:560px;margin:32px auto 0;background:var(--cream);color:var(--ink);border-radius:24px;padding:36px 28px}
+.price .big{font-family:'DM Serif Display',serif;font-size:64px;line-height:1;color:var(--red)}
+.price .row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px;text-align:left}
+.price .row:last-of-type{border-bottom:0}
+.price .box .cta{margin-top:22px;width:100%}
+.price .lead{color:var(--cream);opacity:.92;margin-left:auto;margin-right:auto}
+
+/* gallery */
+.gallery{margin-top:36px;columns:3 260px;column-gap:14px}
+.gallery img{display:block;width:100%;height:auto;margin:0 0 14px;border-radius:18px;break-inside:avoid;background:#eee}
+
+/* talk */
+.talk{background:var(--red);color:var(--cream);text-align:center}
+.talk .lead{color:var(--cream);opacity:.92;margin-left:auto;margin-right:auto}
+.wa{margin-top:28px;display:inline-flex;align-items:center;gap:12px;min-height:58px;padding:0 30px;border-radius:999px;background:var(--cream);color:var(--red);font-weight:700;font-size:18px;text-decoration:none}
+.wa:hover{transform:translateY(-2px)}
+
+/* countdown */
+.countdown{display:inline-flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 12px;margin:20px 0 0;padding:10px 18px;border-radius:999px;background:rgba(255,243,232,.14);font-size:15px;font-weight:600}
+.countdown b{font-variant-numeric:tabular-nums}
+.badge{display:inline-block;margin-bottom:14px;padding:6px 14px;border-radius:999px;background:var(--red);color:var(--cream);font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+
+/* faq */
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-top:12px}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--red)}
+details[open] summary::after{content:"–"}
+details p{margin:12px 0 0;line-height:1.6;color:var(--muted)}
+
+footer{padding:40px 0 56px;text-align:center;font-size:14px;color:var(--muted)}
+footer .brand{justify-content:center;color:var(--ink);margin-bottom:12px}
+
+/* sticky mobile cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,248,241,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);display:none;align-items:center;justify-content:space-between;gap:12px;z-index:10}
+.sticky p{margin:0;font-size:14px;line-height:1.3}
+.sticky .cta{min-height:48px;padding:0 22px;font-size:16px}
+
+@media (max-width:760px){
+  .facts{grid-template-columns:1fr 1fr}
+  .fact:nth-child(2){border-right:0}
+  .fact:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .grid2,.prize .wrap{grid-template-columns:1fr}
+  .dates{grid-template-columns:1fr 1fr}
+  section{padding:56px 0}
+  .sticky{display:flex}
+  .gallery{columns:2;column-gap:10px}
+  .gallery img{margin-bottom:10px;border-radius:14px}
+  body{padding-bottom:80px}
+  .top .mini{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="en.html"><img src="wave.png" alt="">On the Wave</a>
+    <a class="mini" href="#precio">Reserve a spot</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">DJ from scratch · Black Friday</p>
+      <h1 class="serif">Black Friday:<br>a free FLX4.*</h1>
+      <p class="sub">Learn to mix in 4 intensive sessions with Caro Durán. No experience and no gear needed: you show up, learn, and leave mixing.</p>
+      <a class="cta" href="#precio">Reserve your spot with $50</a>
+      <p class="note">Enrollment open until Monday, November 30 · We start that same day · Flux Studios, NYC</p>
+      <div><p class="countdown" id="cd"><span id="cd-text">Enrollment open until November 30</span><span aria-hidden="true">·</span><span>Limited spots</span></p></div>
+      <img src="flx4.png" alt="Pioneer DDJ-FLX4 controller">
+    </div>
+  </div>
+
+  <div class="facts">
+    <div class="fact"><b>4</b><span>intensive<br>3-hour sessions</span></div>
+    <div class="fact"><b>12 h</b><span>of class<br>in total</span></div>
+    <div class="fact"><b>Mondays</b><span>6:00 to 9:00 p.m.<br>for one month</span></div>
+    <div class="fact"><b>From 0</b><span>no experience<br>or gear needed</span></div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2 class="serif">This course is for you if…</h2>
+      <p class="lead">You've always wanted to mix but don't know where to start. Here we begin from zero, step by step.</p>
+      <div class="grid2">
+        <div class="card check">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8202A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><h3>You don't need to know anything</h3><p>No previous music or DJ experience required. We start from the very basics.</p></div>
+        </div>
+        <div class="card check">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8202A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><h3>You don't need a controller</h3><p>You don't have to buy anything before you start. Just bring your desire to learn.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2 class="serif">Dates</h2>
+      <p class="lead">One month, four Mondays. Every session is intensive: 3 hours of real practice.</p>
+      <div class="dates">
+        <div class="date"><small>Session 1</small><b>Nov 30</b><span>Monday</span></div>
+        <div class="date"><small>Session 2</small><b>Dec 7</b><span>Monday</span></div>
+        <div class="date"><small>Session 3</small><b>Dec 14</b><span>Monday</span></div>
+        <div class="date"><small>Session 4</small><b>Dec 21</b><span>Monday</span></div>
+      </div>
+      <p class="when"><strong>Group 1:</strong> Mondays, 6:00 to 9:00 p.m. &nbsp;·&nbsp; <strong>Location:</strong> Flux Studios · 154 E 2nd St, New York, NY 10009 · <a href="https://www.google.com/maps/search/?api=1&amp;query=Flux+Studios+154+E+2nd+St+New+York+NY+10009" style="color:var(--red);font-weight:600">View on Google Maps</a></p>
+    </div>
+  </section>
+
+  <section class="prize">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow" style="color:#E9B44C">The prize</p>
+        <h2 class="serif" style="margin-top:14px">Finish the course competing for an FLX4.</h2>
+        <p class="lead">At the end of the course we hold a competition among the students. The winner takes home a Pioneer DDJ-FLX4 to keep practicing.</p>
+        <p class="fine">*The FLX4 is the prize for the winner of the course's final competition. Terms apply.</p>
+      </div>
+      <img src="flx4.png" alt="Pioneer DDJ-FLX4 controller" loading="lazy">
+    </div>
+  </section>
+
+  <section class="teacher">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--red)">Your teacher</p>
+      <h2 class="serif" style="margin-top:14px">Caro Durán</h2>
+      <p class="lead">Producer, DJ and educator with over 15 years of experience teaching electronic music in English and Spanish.</p>
+      <ul>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8202A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Part-time faculty, Electronic Digital Instrument, Berklee College of Music</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8202A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Ableton Certified Trainer (the only woman with this certification in Latin America)</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8202A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Roland Certified Trainer and Yamaha Ambassador for Latin America</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8202A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Voting member of the Recording Academy (GRAMMYs) and the Latin Recording Academy</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="price" id="precio">
+    <div class="wrap">
+      <h2 class="serif">Reserve your spot</h2>
+      <p class="lead">Save your place today with just $50. Enrollment open until November 30.</p>
+      <div class="box">
+        <span class="badge">Limited spots</span>
+        <div class="big">$520</div>
+        <p style="margin:8px 0 18px;color:var(--muted)">Total course price</p>
+        <div class="row"><span>Deposit today</span><strong>$50</strong></div>
+        <div class="row"><span>Balance (paid at the first class)</span><strong>$470</strong></div>
+        <div class="row"><span>Length</span><strong>4 sessions · 12 hours</strong></div>
+        <div class="row"><span>Starts</span><strong>Monday, November 30</strong></div>
+        <div class="row"><span>Location</span><strong>Flux Studios, NYC</strong></div>
+        <a class="cta dark" id="stripe" href="https://buy.stripe.com/3cIbIUePnchP0hr6m07g401">Pay the $50 deposit</a>
+        <p style="margin:12px 0 0;font-size:13px;color:var(--muted)">Secure payment with Stripe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="students">
+    <div class="wrap">
+      <h2 class="serif">This is what being an On the Wave student feels like</h2>
+      <div class="gallery">
+        <img src="est01.jpg" alt="Students around the controller during a class" loading="lazy">
+        <img src="est02.jpg" alt="Student mixing with green lights and smoke" loading="lazy">
+        <img src="est03.jpg" alt="Student practicing on the studio controller" loading="lazy">
+        <img src="est04.jpg" alt="Students practicing on their controllers in class" loading="lazy">
+        <img src="est05.jpg" alt="Two students learning together, black and white" loading="lazy">
+        <img src="est06.jpg" alt="Student mixing in front of the studio screen" loading="lazy">
+        <img src="est07.jpg" alt="Students trying out DJ gear" loading="lazy">
+        <img src="est08.jpg" alt="Student focused on the mixer" loading="lazy">
+        <img src="est09.jpg" alt="Group class around the gear" loading="lazy">
+        <img src="est10.jpg" alt="Students working on the laptop" loading="lazy">
+        <img src="est11.jpg" alt="Student practicing in a studio with natural light" loading="lazy">
+        <img src="est12.jpg" alt="Group of students learning on the controller" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap" style="max-width:760px">
+      <h2 class="serif">FAQ</h2>
+      <details><summary>Do I need to know anything about music?</summary><p>No. The course starts completely from scratch.</p></details>
+      <details><summary>Do I have to buy a controller?</summary><p>No. You don't need a controller or any DJ gear to take the course.</p></details>
+      <details><summary>How does the free FLX4 work?</summary><p>At the end of the course we hold a competition among the students. The winner takes home the Pioneer DDJ-FLX4.</p></details>
+      <details><summary>How do I pay the rest?</summary><p>You reserve your spot with $50 and pay the $470 balance on the day of your first class (Monday, November 30).</p></details>
+    </div>
+  </section>
+  <section class="talk">
+    <div class="wrap">
+      <h2 class="serif">Questions?<br>Talk to us.</h2>
+      <p class="lead">Message us on WhatsApp and we'll help you choose your course and schedule.</p>
+      <a class="wa" href="https://wa.me/19293127742?text=Hi%20On%20the%20Wave%2C%20I%27d%20like%20information%20about%20the%20DJ%20course">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+        Message us on WhatsApp
+      </a>
+      <p style="margin:16px 0 0;font-size:16px;opacity:.9">+1 (929) 312-7742</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="brand"><img src="wave.png" alt="" style="filter:invert(1) brightness(.2)">On the Wave</div>
+  <p>DJ from scratch with Caro Durán</p>
+</footer>
+
+<div class="sticky">
+  <p><strong>Free FLX4*</strong><br>Limited spots · Reserve with $50</p>
+  <a class="cta dark" href="#precio">Reserve</a>
+</div>
+
+<script>
+(function(){
+  var deadline = new Date('2026-11-30T18:00:00-05:00').getTime();
+  var lastCall = new Date('2026-11-28T00:00:00-05:00').getTime();
+  var el = document.getElementById('cd-text');
+  function tick(){
+    var ms = deadline - Date.now();
+    if (ms <= 0) { el.textContent = 'Last spots · Message us for the next group'; return; }
+    if (Date.now() >= lastCall) {
+      var hh = Math.floor(ms/3600000), mm = Math.floor(ms%3600000/60000);
+      el.innerHTML = 'Last spots · We start Monday the 30th · <b>' + hh + '</b> h <b>' + mm + '</b> min left';
+      return;
+    }
+    var d = Math.floor(ms/86400000), h = Math.floor(ms%86400000/3600000), m = Math.floor(ms%3600000/60000);
+    var parts = [];
+    if (d > 0) parts.push('<b>' + d + '</b> ' + (d === 1 ? 'day' : 'days'));
+    parts.push('<b>' + h + '</b> h');
+    if (d === 0) parts.push('<b>' + m + '</b> min');
+    el.innerHTML = parts.join(' ') + ' left to enroll';
+  }
+  tick(); setInterval(tick, 30000);
+})();
+</script>
+</body>
+</html>
